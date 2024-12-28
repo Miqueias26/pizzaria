@@ -18,7 +18,9 @@ function Header() {
         </button>
       </header>
       <img src={Pizza} alt="" />
-      <h1 className="text-[10.5rem] text-[#CF210D] font-bold">SABOR DIVINO</h1>
+      <h1 className="text-[10.5rem] text-[#CF210D] font-bold font-jockey">
+        SABOR DIVINO
+      </h1>
       <p className="text-lg font-sm ">
         Porque la vida sabe mejor con una pizza divina.
       </p>

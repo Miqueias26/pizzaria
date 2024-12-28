@@ -1,11 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        barlow: ['"Barlow Condensed"', 'sans-serif'],
+        bebas: ['"Bebas Neue"', 'sans-serif'],
+        fira: ['"Fira Sans Condensed"', 'sans-serif'],
+        jockey: ['"Jockey One"', 'sans-serif'],
+        jost: ['"Jost"', 'sans-serif'],
+        poppins: ['"Poppins"', 'sans-serif'],
+        robotoCondensed: ['"Roboto Condensed"', 'sans-serif'],
+        roboto: ['"Roboto"', 'sans-serif'],
+      },
+      animation: {
+        move: 'mover 30s linear infinite',
+      },
+      keyframes: {
+        mover: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+    },
   },
   plugins: [],
 }
