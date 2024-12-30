@@ -6,15 +6,15 @@ import { FiYoutube } from "react-icons/fi";
 function Footer() {
   return (
     <div className="px-8 pt-14 flex flex-col">
-      <div className="flex py-9 border-b-2">
-        <div className="flex  flex-col items-center mr-[15rem]">
-          <img src={Logo} alt="" className="w-[100px] mb-4" />
+      <div className="flex py-4 md:py-9 border-b-2">
+        <div className="mr-4 md:mr-[10rem] lg:mr-[16.2rem]">
+          <img src={Logo} alt="" className="w-[50px] md:w-[100px] mb-4" />
         </div>
-        <div className="mr-[15rem]">
-          <h2 className="font-poppins font-bold text-xl mb-6">
+        <div className="mr-4 md:mr-[10rem] lg:mr-[16.2rem]">
+          <h2 className="font-poppins font-bold text-sm md:text-lg lg:text-xl mb-6">
             Tipos de Pizza
           </h2>
-          <ul className="flex flex-col gap-4 text-md font-poppins font-light">
+          <ul className="flex flex-col gap-4 text-xs md:text-sm lg:text-md font-poppins font-light">
             <li className="cursor-pointer">Pizza Margherita</li>
             <li className="cursor-pointer">Pizza Pepperoni</li>
             <li className="cursor-pointer">Pizza Hawaiana</li>
@@ -25,8 +25,10 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h2 className="font-poppins font-bold text-xl mb-6">Explorar</h2>
-          <ul className="flex flex-col gap-4 text-md font-poppins font-light">
+          <h2 className="font-poppins font-bold text-sm md:text-lg lg:text-xl mb-6">
+            Explorar
+          </h2>
+          <ul className="flex flex-col gap-4 text-xs md:text-sm lg:text-md font-poppins font-light">
             <li className="cursor-pointer">Menú</li>
             <li className="cursor-pointer">Ofertas Especiales</li>
             <li className="cursor-pointer">Contacto</li>
@@ -38,14 +40,14 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-between items-center py-7">
-        <h2 className="text-black font-normal text-lg cursor-pointer">
+        <h2 className="text-black font-normal text-sm md:text-lg cursor-pointer">
           &copy; 2024 Pizzaria Inc.
         </h2>
         <div className="flex gap-7 items-center">
-          <BsTwitterX className="w-[24px] h-[24px] cursor-pointer" />
-          <FaInstagram className="w-[24px] h-[24px] cursor-pointer" />
-          <FiYoutube className="w-[24px] h-[24px] cursor-pointer" />
-          <FaLinkedin className="w-[24px] h-[24px] cursor-pointer" />
+          <BsTwitterX className="md:w-[24px] md:h-[24px] cursor-pointer" />
+          <FaInstagram className="md:w-[24px] md:h-[24px] cursor-pointer" />
+          <FiYoutube className="md:w-[24px] md:h-[24px] cursor-pointer" />
+          <FaLinkedin className="md:w-[24px] md:h-[24px] cursor-pointer" />
         </div>
       </div>
     </div>

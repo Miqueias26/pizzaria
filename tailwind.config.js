@@ -22,6 +22,15 @@ export default {
           '100%': { transform: 'translateX(-100%)' },
         },
       },
+      keyframes: {
+        slideDown: {
+          '0%': { top: '-100%' },
+          '100%': { top: '0' },
+        },
+      },
+      animation: {
+        slideDown: 'slideDown 0.5s ease-out forwards',
+      },
     },
   },
   plugins: [],
