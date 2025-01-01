@@ -13,7 +13,8 @@ function MainContent() {
           >
             <p className=" text-center text-[1.84rem] font-jost">
               Imagina morder una rebanada de pizza <br /> tan deliciosa que haga
-              que tu paladar <br /> dance de placer. En Sabor Divino, <br />
+              que tu paladar <br /> dance de placer. En{" "}
+              <strong className="text-[#D2210D]">Sabor Divino</strong>,<br />
               cada ingrediente se elige con cariño, <br /> cada masa se prepara
               con perfección y <br /> cada horno es una promesa de <br /> un
               sabor inigualable.
@@ -30,8 +31,6 @@ function MainContent() {
             <img src={PizzaMain} alt="" className="w-[75%] rounded-lg" />
           </motion.div>
         </section>
-
-        <div></div>
       </div>
     </div>
   );
