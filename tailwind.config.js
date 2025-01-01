@@ -15,21 +15,17 @@ export default {
       },
       animation: {
         move: 'mover 30s linear infinite',
+        slideDown: 'slideDown 0.5s ease-out forwards'
       },
       keyframes: {
         mover: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
-      },
-      keyframes: {
         slideDown: {
           '0%': { top: '-100%' },
           '100%': { top: '0' },
         },
-      },
-      animation: {
-        slideDown: 'slideDown 0.5s ease-out forwards',
       },
     },
   },
