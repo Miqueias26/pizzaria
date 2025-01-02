@@ -5,6 +5,8 @@ import Logo from "../../assets/image/logorangel.png";
 import { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { FaHome, FaPhoneAlt, FaUserFriends } from "react-icons/fa";
+import { MdRestaurantMenu } from "react-icons/md";
 
 const Navbar = () => {
   const [ShowModel, setShowModel] = useState(false);
@@ -25,7 +27,7 @@ const Navbar = () => {
   }, [ShowModel]);
 
   return (
-    <div className="flex items-center justify-between px-8 ">
+    <div className="w-full flex items-center justify-between px-8 ">
       {ShowModel && (
         <div className="animate-slideDown flex flex-col gap-9 justify-center items-center absolute top-0 left-0 z-10 w-full h-[80vh] bg-white">
           <IoCloseOutline
@@ -69,30 +71,30 @@ const Navbar = () => {
       )}
 
       <img src={Logo} alt="" className="w-[104px] cursor-pointer" />
-      <nav className="hidden md:flex gap-14 items-center bg-[#FFFFFF] py-3 px-36 shadow-sm rounded">
+      <nav className="hidden md:flex gap-14 items-center bg-[#FFFFFF] py-3 px-28 shadow-sm rounded">
         <Link
           to="/"
-          className=" border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
+          className="flex items-center gap-2 border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
         >
-          Home
+          <FaHome className="text-[#717171]" /> Home
         </Link>
         <Link
           to="/menu"
-          className="border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
+          className="flex items-center gap-2 border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
         >
-          Menu
+          <MdRestaurantMenu className="text-[#717171]" /> Menu
         </Link>
         <Link
           to="/contact"
-          className="border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
+          className="flex items-center gap-2 border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
         >
-          Contacto
+          <FaPhoneAlt className="text-[#717171]" /> Contacto
         </Link>
         <Link
           to="/nosotros"
-          className="border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
+          className="flex items-center gap-2 border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
         >
-          Nosotros
+          <FaUserFriends className="text-[#717171]" /> Nosotros
         </Link>
       </nav>
 

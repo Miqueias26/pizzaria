@@ -1,8 +1,12 @@
 import Pizza from "../../assets/image/pizzaHeader.png";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function Header() {
   return (
     <div className="flex flex-col justify-center items-center py-1 mb-3">
+      <button className="hidden md:flex lg:flex justify-center gap-2 items-center px-4 py-2 bg-[#D2210D] text-white  font-bold rounded-full fixed right-[-38px] top-[50%] rotate-90 z-20 ">
+        <FaPhoneAlt className="text-white " /> 972 527 836
+      </button>
       <img src={Pizza} alt="" className="w-[500px]" />
       <h1 className="text-7xl md:text-[10rem] lg:text-[16.2rem] text-[#CF210D] font-bold font-jockey">
         Sabor Divino
