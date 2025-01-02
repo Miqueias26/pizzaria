@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { IoIosStarOutline } from "react-icons/io";
+import { CiPizza } from "react-icons/ci";
+import { IoIceCreamOutline } from "react-icons/io5";
+import { LuCupSoda, LuIceCreamBowl } from "react-icons/lu";
+import { BiSolidOffer } from "react-icons/bi";
 
 const items = [
   {
@@ -37,7 +41,7 @@ const items = [
   },
   {
     id: 5,
-    category: "Pizza",
+    category: "Promociones",
     image: "/public/card5.png",
     title: "Pizza Marguerita",
     text: "Marguerita",
@@ -113,32 +117,46 @@ const Menu = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="flex items-center p-2 bg-[#F4EFE5] rounded-full justify-center gap-9 mb-4">
+      <div className="flex items-center p-2 bg-[#D2210D]  justify-center gap-9 mb-4">
         <button
-          className={`border-none text-lg font-bold bg-none py-2 px-3 rounded-full hover:bg-[#D2210D] hover:text-white ${
-            selectedCategory === "Pizza" ? "text-[#D2210D]" : "text-black"
+          className={`flex items-center border-none text-lg font-bold bg-none py-2 px-3 rounded-full ${
+            selectedCategory === "Promociones"
+              ? "text-white border-2 border-white"
+              : "text-white"
+          }`}
+          onClick={() => handleCategoryChange("Promociones")}
+        >
+          <BiSolidOffer className="text-3xl" /> Promociones
+        </button>
+        <button
+          className={`flex items-center border-none text-lg font-bold bg-none py-2 px-3 rounded-full ${
+            selectedCategory === "Pizza"
+              ? "text-white border-2 border-white"
+              : "text-white"
           }`}
           onClick={() => handleCategoryChange("Pizza")}
         >
-          Pizzas
+          <CiPizza className="text-3xl" /> Pizzas
         </button>
         <button
-          className={`border-none text-lg font-bold bg-none py-2 px-3 rounded-full hover:bg-[#D2210D] hover:text-white ${
-            selectedCategory === "Sobremesas" ? "text-[#D2210D]" : "text-black"
+          className={`flex items-center border-none text-lg font-bold bg-none py-2 px-3 rounded-full ${
+            selectedCategory === "Sobremesas"
+              ? "text-white border-2 border-white"
+              : "text-white"
           }`}
           onClick={() => handleCategoryChange("Sobremesas")}
         >
-          Postres
+          <LuIceCreamBowl className="text-3xl" /> Postres
         </button>
         <button
-          className={`border-none text-lg font-bold bg-none py-2 px-3 rounded-full hover:bg-[#D2210D] hover:text-white ${
+          className={`flex items-center border-none text-lg font-bold bg-none py-2 px-3 rounded-full ${
             selectedCategory === "Refrigerante"
-              ? "text-[#D2210D]"
-              : "text-black"
+              ? "text-white border-2 border-white"
+              : "text-white"
           }`}
           onClick={() => handleCategoryChange("Refrigerante")}
         >
-          Bebidas
+          <LuCupSoda className="text-3xl" /> Bebidas
         </button>
       </div>
 

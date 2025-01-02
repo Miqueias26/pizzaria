@@ -69,28 +69,28 @@ const Navbar = () => {
       )}
 
       <img src={Logo} alt="" className="w-[104px] cursor-pointer" />
-      <nav className="hidden md:flex gap-14 items-center">
+      <nav className="hidden md:flex gap-14 items-center bg-[#FFFFFF] py-3 px-36 shadow-sm rounded">
         <Link
           to="/"
-          className=" border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+          className=" border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
         >
           Home
         </Link>
         <Link
           to="/menu"
-          className="border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+          className="border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
         >
           Menu
         </Link>
         <Link
           to="/contact"
-          className="border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+          className="border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
         >
           Contacto
         </Link>
         <Link
           to="/nosotros"
-          className="border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+          className="border-b-2 border-transparent text-lg font-bold hover:border-[#717171] cursor-pointer no-underline text-[#717171]"
         >
           Nosotros
         </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-2">
         <button className="hidden md:flex justify-center items-center px-4 py-2 bg-[#D2210D] text-white font-bold rounded-full">
-          Hacer Pedido
+          Comenzar Pedido
         </button>
 
         {!ShowModel && (

@@ -11,6 +11,10 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
+html body {
+  background: #f5f5f5;
+}
 /* Bloqueia o Scroll */
 .no-scroll {
   overflow: hidden;

@@ -27,11 +27,8 @@ function Section() {
             promesa de un sabor inigualable.
           </h2>
           <div className="flex gap-6 md:gap-12">
-            <button className="bg-[#00B03B] text-white w-[120px] md:w-[142px] h-[33px] font-semibold font-poppins rounded">
-              Hacer Pedido
-            </button>
-            <button className="bg-[#D2210D] text-white w-[120px] md:w-[142px] h-[33px] font-semibold font-poppins rounded">
-              Hacer Pedido
+            <button className="hidden md:flex justify-center items-center px-4 py-2 bg-[#D2210D] text-white font-bold rounded-full">
+              Comenzar Pedido
             </button>
           </div>
         </div>
