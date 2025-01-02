@@ -1,6 +1,6 @@
 import React from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import Logo from "../../assets/image/logopizza.png";
+import Logo from "../../assets/image/logorangel.png";
 
 import { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
@@ -25,69 +25,82 @@ const Navbar = () => {
   }, [ShowModel]);
 
   return (
-    <div className="flex items-center justify-between px-8 py-3  ">
+    <div className="flex items-center justify-between px-8 ">
       {ShowModel && (
         <div className="animate-slideDown flex flex-col gap-9 justify-center items-center absolute top-0 left-0 z-10 w-full h-[80vh] bg-white">
           <IoCloseOutline
             className="absolute top-3 right-3 text-3xl"
             onClick={handleClose}
           />
-          <ul className="flex flex-col gap-9 items-center justify-center w-full">
-            <Link to="/" className="no-underline text-black">
-              <li className="pb-1 border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer">
-                Home
-              </li>
+          <nav className="flex flex-col gap-14 items-center">
+            <Link
+              to="/"
+              className=" border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+              onClick={handleClose}
+            >
+              Home
             </Link>
-            <Link to="/menu" className="no-underline text-black">
-              <li className="pb-1 border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer">
-                Menu
-              </li>
+            <Link
+              to="/menu"
+              className="border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+              onClick={handleClose}
+            >
+              Menu
             </Link>
-            <Link to="/contact" className="no-underline text-black">
-              <li className="pb-1 border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer">
-                Contacto
-              </li>
+            <Link
+              to="/contact"
+              className="border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+              onClick={handleClose}
+            >
+              Contacto
             </Link>
-            <Link to="/nosotros" className="no-underline text-black">
-              <li className="pb-1 border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer">
-                Nosotros
-              </li>
+            <Link
+              to="/nosotros"
+              className="border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+              onClick={handleClose}
+            >
+              Nosotros
             </Link>
-          </ul>
+          </nav>
           <button className="flex justify-center items-center bg-[#D2210D] text-white w-[138px] h-[33px] font-bold rounded">
             Hacer Pedido
           </button>
         </div>
       )}
 
-      <img src={Logo} alt="" className="w-[110px] cursor-pointer" />
-      <ul className="hidden md:flex gap-14 items-center">
-        <Link to="/" className="no-underline text-black">
-          <li className=" border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer">
-            Home
-          </li>
+      <img src={Logo} alt="" className="w-[104px] cursor-pointer" />
+      <nav className="hidden md:flex gap-14 items-center">
+        <Link
+          to="/"
+          className=" border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+        >
+          Home
         </Link>
-        <Link to="/menu" className="no-underline text-black">
-          <li className=" border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer">
-            Menu
-          </li>
+        <Link
+          to="/menu"
+          className="border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+        >
+          Menu
         </Link>
-        <Link to="/contact" className="no-underline text-black">
-          <li className=" border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer">
-            Contacto
-          </li>
+        <Link
+          to="/contact"
+          className="border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+        >
+          Contacto
         </Link>
-        <Link to="/nosotros" className="no-underline text-black">
-          <li className=" border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer">
-            Nosotros
-          </li>
+        <Link
+          to="/nosotros"
+          className="border-b-2 border-transparent text-lg font-bold hover:border-black cursor-pointer no-underline text-black"
+        >
+          Nosotros
         </Link>
-      </ul>
+      </nav>
 
       <div className="flex items-center gap-2">
-        <button className="hidden md:flex justify-center items-center px-4 py-2 bg-[#D2210D] text-white font-bold rounded">
+        <button className="hidden md:flex justify-center items-center px-4 py-2 bg-[#D2210D] text-white font-bold rounded-full">
           Hacer Pedido
         </button>
+
         {!ShowModel && (
           <HiOutlineMenuAlt3
             className="md:hidden text-2xl"

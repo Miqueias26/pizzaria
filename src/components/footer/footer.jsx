@@ -1,5 +1,5 @@
 import { BsTwitterX } from "react-icons/bs";
-import Logo from "../../assets/image/logopizza.png";
+import Logo from "../../assets/image/logorangel.png";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FiYoutube } from "react-icons/fi";
 
@@ -45,7 +45,14 @@ function Footer() {
         </h2>
         <div className="flex gap-7 items-center">
           <BsTwitterX className="md:w-[24px] md:h-[24px] cursor-pointer" />
-          <FaInstagram className="md:w-[24px] md:h-[24px] cursor-pointer" />
+          <a
+            href="https://www.instagram.com/sabordivinopizzeria/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black"
+          >
+            <FaInstagram className="md:w-[24px] md:h-[24px] cursor-pointer" />
+          </a>
           <FiYoutube className="md:w-[24px] md:h-[24px] cursor-pointer" />
           <FaLinkedin className="md:w-[24px] md:h-[24px] cursor-pointer" />
         </div>
