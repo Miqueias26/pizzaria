@@ -70,7 +70,9 @@ const Navbar = () => {
         </div>
       )}
 
-      <img src={Logo} alt="" className="w-[104px] cursor-pointer" />
+      <Link to="/">
+        <img src={Logo} alt="" className="w-[104px] cursor-pointer" />
+      </Link>
       <nav className="hidden md:flex gap-14 items-center bg-[#FFFFFF] py-3 px-28 shadow-sm rounded">
         <Link
           to="/"
