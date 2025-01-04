@@ -1,16 +1,21 @@
+import { useState } from "react";
 import styled from "styled-components";
 
-function Test() {
-  alert("hello");
-}
-
 const ButtonUI = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const Dispa = () => {
+    setIsVisible(!isVisible);
+  };
   return (
-    <StyledWrapper>
-      <button className="font-bold" onClick={Test}>
-        Descubre
-      </button>
-    </StyledWrapper>
+    <>
+      <StyledWrapper>
+        <button className="font-bold" onClick={Dispa}>
+          Descubre
+        </button>
+      </StyledWrapper>
+      {isVisible && <div className="">Olá, você clicou no botão!</div>}
+    </>
   );
 };
 
