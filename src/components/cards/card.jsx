@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 import { IoIosStarOutline } from "react-icons/io";
 
-const CardContent = ({ image, title, text, text2 }) => {
+const CardContent = ({ image, title, text, text2, text3 }) => {
   return (
     <div className="w-[18rem] flex-col h-auto justify-center text-center border-2 border-grey rounded-[3%]  pb-4 pl-2 pr-2   transform transition-all duration-500 hover:scale-110 hover:rotate-3 ">
       <p className="flex justify-center text-center pt-2 text-[1.3rem]">
@@ -19,9 +19,7 @@ const CardContent = ({ image, title, text, text2 }) => {
       />
       <strong className="font-poppins text-[1.2rem] ">{text}</strong>
       <p className="font-poppins">{text2}</p>
-      <button className=" bg-[#D2210D] text-white px-3 py-1 rounded-[7%] hover:bg-black">
-        comprar
-      </button>
+      <p className="font-poppins text-[#D2210D] font-bold">{text3}</p>
     </div>
   );
 };
@@ -31,18 +29,18 @@ CardContent.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   text2: PropTypes.string.isRequired,
+  text3: PropTypes.string.isRequired,
 };
 
 function Card() {
   return (
     <div className="flex-col w-full text-center">
-      <div className="">
-        <span className="font-jost text-[22rem] text-black tracking-wide">
-          Best-
-        </span>
-        <span className="font-jost text-[3.5rem] text-[#D2210D]">Sellers.</span>
-      </div>
-      <div className="flex w-full gap-3 justify-center text-left p-10">
+      <span className="font-jost text-[22rem] text-black tracking-wide ">
+        Best-
+      </span>
+      <span className="font-jost text-[3.5rem] text-[#D2210D]">Sellers.</span>
+
+      <div className="flex w-full gap-3 justify-center text-left pl-2 pr-2 pb-3 ">
         <CardContent
           image="/public/card9.png"
           text="Marguerita"
@@ -51,6 +49,7 @@ Mozzarella,
 Albahaca,
 Aceite de oliva."
           title="Pizza Marguerita"
+          text3="11,99€"
         />
 
         <CardContent
@@ -60,6 +59,7 @@ Aceite de oliva."
 Mozzarella,
 Pepperoni."
           title="Pizza Pepperoni"
+          text3="12,99€"
         />
         <CardContent
           image="/public/card6.png"
@@ -69,6 +69,7 @@ Queso azul,
 Parmesano,
 Queso Emmental. "
           title="Pizza Cuatro Quesos"
+          text3="9,99€"
         />
         <CardContent
           image="/public/card7.png"
@@ -78,6 +79,7 @@ Mozzarella,
 Jamón,
 Piña."
           title="Pizza Hawaiana"
+          text3="11,99€"
         />
         <CardContent
           image="/public/card11.png"
@@ -86,6 +88,7 @@ Piña."
 Mozzarella, Bacon,
 Carne picada."
           title="Pizza Babacoa"
+          text3="14,99€"
         />
       </div>
     </div>

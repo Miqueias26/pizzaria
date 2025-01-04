@@ -13,6 +13,9 @@ export default {
         robotoCondensed: ['"Roboto Condensed"', 'sans-serif'],
         roboto: ['"Roboto"', 'sans-serif'],
       },
+      backgroundImage: {
+        'hero-pattern': "url('bgMain.jpg')",
+      },
       animation: {
         move: 'mover 30s linear infinite',
         slideDown: 'slideDown 0.5s ease-out forwards'
