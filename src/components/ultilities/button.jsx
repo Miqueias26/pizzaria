@@ -1,20 +1,25 @@
 import { useState } from "react";
 import styled from "styled-components";
+import Reviews from "../ultilities/reviews";
 
 const ButtonUI = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const Dispa = () => {
+  const EnginneDisplay = () => {
     setIsVisible(!isVisible);
   };
+
+  if (isVisible) {
+    return <Reviews />;
+  }
+
   return (
     <>
       <StyledWrapper>
-        <button className="font-bold" onClick={Dispa}>
+        <button className="font-bold" onClick={EnginneDisplay}>
           Descubre
         </button>
       </StyledWrapper>
-      {isVisible && <div className="">Olá, você clicou no botão!</div>}
     </>
   );
 };

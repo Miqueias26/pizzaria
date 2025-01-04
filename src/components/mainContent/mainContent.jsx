@@ -3,7 +3,7 @@ import ButtonUi from "../../components/ultilities/button";
 
 function MainContent() {
   return (
-    <div className="w-full flex text-center items-center bg-white ">
+    <div className="w-full flex text-center items-center bg-white relative">
       <section className="w-[50%] px-10 flex flex-col items-center text-center">
         <p className="text-[1.7rem] font-jost text-black leading-relaxed text-wrap ">
           Imagina morder una rebanada de pizza tan deliciosa que haga que tu
@@ -14,11 +14,11 @@ function MainContent() {
         </p>
         <ButtonUi />
       </section>
-      <section className="w-[50%] flex items-center justify-center bg-[#D2210D]">
+      <section className="w-[50%] flex items-center justify-center bg-[#f9432e]">
         <img
           src={bgMain2}
           alt=""
-          className="w-full max-w-[450px] object-contain"
+          className="w-full max-w-[450px] object-contain "
         />
       </section>
     </div>
