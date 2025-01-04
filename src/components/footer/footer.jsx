@@ -24,7 +24,7 @@ function Footer() {
             <li className="cursor-pointer">Pizza Marinera</li>
           </ul>
         </div>
-        <div>
+        <div className="mr-4 md:mr-[10rem] lg:mr-[16.2rem]">
           <h2 className="font-poppins font-bold text-sm md:text-lg lg:text-xl mb-6">
             Explorar
           </h2>
@@ -37,7 +37,33 @@ function Footer() {
             <li className="cursor-pointer">Sobre Nosotros</li>
           </ul>
         </div>
+        <div className="font-poppins">
+          <h1 className="font-bold text-3xl mb-4">
+            Servicio al cliente Telepizza
+          </h1>
+          <h3 className="font-bold text-lg">Línea de atención al cliente </h3>
+          <p className="font-bold text-2xl">972 527 836</p>
+          <h3 className="font-bold text-lg">Horario de atención telefónica</h3>
+          <div className="mb-7">
+            <p className="text-[#AEB2BB] font-bold text-sm">
+              De lunes a jueves{" "}
+            </p>
+            <p className="text-[#AEB2BB] text-sm "> de 13:00 a 00:00</p>
+          </div>
+          <div className="mb-7">
+            <p className="text-[#AEB2BB] font-bold text-sm">
+              De viernes a domingo{" "}
+            </p>
+            <p className="text-[#AEB2BB] text-sm "> de 13:00 a 00:30</p>
+          </div>
+
+          <h1 className="font-bold text-xl">Sede Central</h1>
+          <p className="text-[#AEB2BB] text-sm">
+            Av. Grècia, 31, 17258 L'Estartit, Girona
+          </p>
+        </div>
       </div>
+
       <div className="flex justify-between items-center py-1 px-8 bg-[#7D0E14]">
         <h2 className="text-white  font-poppins font-bold text-sm md:text-md cursor-pointer m-0">
           &copy; 2024 Pizzaria Inc.
