@@ -6,19 +6,16 @@ const ButtonUI = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const EnginneDisplay = () => {
-    setIsVisible(!isVisible);
+    setIsVisible((prev) => !prev);
   };
-
-  if (isVisible) {
-    return <Reviews />;
-  }
 
   return (
     <>
       <StyledWrapper>
         <button className="font-bold" onClick={EnginneDisplay}>
-          Descubre
+          {isVisible ? "Ocultar" : "Descubre"}
         </button>
+        {isVisible && <Reviews />}
       </StyledWrapper>
     </>
   );
