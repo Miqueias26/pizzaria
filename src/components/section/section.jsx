@@ -26,11 +26,6 @@ function Section() {
             con cariño, cada masa se prepara con perfección y cada horno es una
             promesa de un sabor inigualable.
           </h2>
-          <div className="flex gap-6 md:gap-12">
-            <button className="hidden md:flex justify-center items-center px-4 py-2 bg-[#D2210D] text-white font-bold rounded-full">
-              Comenzar Pedido
-            </button>
-          </div>
         </div>
       </div>
     </div>

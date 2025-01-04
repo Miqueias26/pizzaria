@@ -91,7 +91,9 @@ const CardContent = ({ image, price, text, text2 }) => {
       <img src={image} className=" w-[200px]   " />
       <div>
         <p className="font-poppins text-[1.2rem] font-bold m-0">{text}</p>
-        <p className="font-poppins text-sm text-[#AEB2BB] mb-1">{text2}</p>
+        <p className="font-poppins text-sm text-[#AEB2BB] mb-1 max-w-64">
+          {text2}
+        </p>
         <p className="text-[#D2210D] text-lg font-poppins font-extrabold">
           {formattedPrice}
         </p>
@@ -103,8 +105,8 @@ const CardContent = ({ image, price, text, text2 }) => {
 CardContent.propTypes = {
   image: PropTypes.string.isRequired,
   price: PropTypes.number,
-  text: PropTypes.string,
-  text2: PropTypes.string,
+  text: PropTypes.string.isRequired,
+  text2: PropTypes.string.isRequired,
 };
 
 const Menu = () => {
