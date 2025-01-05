@@ -49,10 +49,10 @@ function Card() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <span className="font-jost text-[6rem] md:text-[10rem] lg:text-[14rem] xl:text-[22rem] text-black tracking-wide block md:inline-block">
+            <span className="font-jost text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[14rem] xl:text-[14rem] 2xl:text-[22rem] text-black tracking-wide block md:inline-block">
               Best-
             </span>
-            <span className="font-jost text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] text-[#D2210D] block md:inline-block">
+            <span className="font-jost text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[4rem] xl:text-[4rem] 2xl:text-[6rem] text-[#D2210D] block md:inline-block">
               Sellers.
             </span>
           </motion.div>
