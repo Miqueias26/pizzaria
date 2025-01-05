@@ -1,4 +1,3 @@
-import React from "react";
 import Video from "../../assets/video/videoOficial.webm";
 
 function Section() {
@@ -22,7 +21,7 @@ function Section() {
         <div className="flex flex-col gap-6 md:gap-12 items-center justify-center bg-black w-full md:w-[50%] px-6 md:px-12 lg:px-24 py-5">
           <h2 className="text-white text-center font-jost text-lg md:text-2xl font-light">
             Imagina morder una rebanada de pizza tan deliciosa que haga que tu
-            paladar dance de placer. En Sabor Divino, cada ingrediente se elige
+            paladar dance de placer. En Sabor Divino, cada ingrediente se elige
             con cariño, cada masa se prepara con perfección y cada horno es una
             promesa de un sabor inigualable.
           </h2>

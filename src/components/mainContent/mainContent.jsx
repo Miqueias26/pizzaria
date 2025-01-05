@@ -1,38 +1,30 @@
-import PizzaMain from "../../assets/image/pizzaMain.jpg";
-import { motion } from "framer-motion";
+import bgMain2 from "/public/bgMain2.png";
+import ButtonUi from "../../components/ultilities/button";
+import ScrollEffect from "../ultilities/scrolleffect";
 
 function MainContent() {
   return (
-    <div className="w-full">
-      <div className="flex text-center items-center w-full py-10">
-        <section className="w-full px-5">
-          <motion.div
-            initial={{ opacity: 0, x: -100 }} // Estado inicial
-            animate={{ opacity: 1, x: 0 }} // Estado final
-            transition={{ duration: 1.5 }} // Duração da animação
-          >
-            <p className=" text-center text-[1.84rem] font-jost">
-              Imagina morder una rebanada de pizza <br /> tan deliciosa que haga
-              que tu paladar <br /> dance de placer. En{" "}
-              <strong className="text-[#D2210D]">Sabor Divino</strong>,<br />
-              cada ingrediente se elige con cariño, <br /> cada masa se prepara
-              con perfección y <br /> cada horno es una promesa de <br /> un
-              sabor inigualable.
-            </p>
-          </motion.div>
+    <ScrollEffect>
+      <div className="w-full flex text-center items-center bg-white relative">
+        <section className="w-[50%] px-10 flex flex-col items-center text-center">
+          <p className="text-[1.7rem] font-jost text-black leading-relaxed text-wrap ">
+            Imagina morder una rebanada de pizza tan deliciosa que haga que tu
+            paladar dance de placer. En
+            <strong className="text-[#D2210D]"> Sabor Divino</strong>, cada
+            ingrediente se elige con cariño, cada masa se prepara con perfección
+            y cada horno es una promesa de un sabor inigualable.
+          </p>
+          <ButtonUi />
         </section>
-
-        <section className="w-full px-5 ">
-          <motion.div
-            initial={{ opacity: 0, x: -100 }} // Estado inicial
-            animate={{ opacity: 1, x: 0 }} // Estado final
-            transition={{ duration: 1.9 }} // Duração da animação
-          >
-            <img src={PizzaMain} alt="" className="w-[75%] rounded-lg" />
-          </motion.div>
+        <section className="w-[50%] flex items-center justify-center bg-[#f9432e]">
+          <img
+            src={bgMain2}
+            alt=""
+            className="w-full max-w-[450px] object-contain "
+          />
         </section>
       </div>
-    </div>
+    </ScrollEffect>
   );
 }
 
