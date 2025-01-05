@@ -42,7 +42,7 @@ function Card() {
         <span className="font-jost text-[6rem] md:text-[10rem] lg:text-[14rem] xl:text-[22rem] text-black tracking-wide block md:inline-block">
           Best-
         </span>
-        <span className="font-jost text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] text-[#D2210D] block md:inline-block">
+        <span className="font-jost text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] text-[#0B7F3A] block md:inline-block">
           Sellers.
         </span>
       </div>

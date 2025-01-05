@@ -64,8 +64,8 @@ const Navbar = () => {
               Nosotros
             </Link>
           </nav>
-          <button className="flex justify-center items-center bg-[#D2210D] text-white w-[138px] h-[33px] font-bold rounded">
-            Hacer Pedido
+          <button className="flex justify-center items-center bg-[#0B7F3A] text-white w-[138px] h-[33px] font-bold rounded">
+            Comenzar Pedido
           </button>
         </div>
       )}
@@ -101,7 +101,7 @@ const Navbar = () => {
       </nav>
 
       <div className="flex items-center gap-2">
-        <button className="hidden md:flex justify-center items-center px-4 py-2 bg-[#D2210D] text-white font-bold rounded-full">
+        <button className="hidden md:flex justify-center items-center px-4 py-2 bg-[#0B7F3A] text-white font-bold rounded-full transform transition-transform duration-200 hover:scale-105">
           Comenzar Pedido
         </button>
 
