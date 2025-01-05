@@ -7,10 +7,10 @@ function Reviews() {
   return (
     <motion.div
       initial={{ x: "-100vw, ", y: "-29.1vw" }}
-      animate={{ x: 935 }}
+      animate={{ x: 933 }}
       transition={{ type: "spring", stiffness: 40 }}
     >
-      <div className="z-50 flex absolute justify-center bg-[#f9432e] top-[0] left-[] right-[0] w-[92.2dvh] h-[62.1dvh]">
+      <div className="z-50 flex absolute justify-center bg-black top-[0] left-[] right-[0] w-[91.4dvh] h-[62.1dvh]">
         {/*Start Carrousel boots */}
         <Carousel indicators={false} className="relative">
           <Carousel.Item>
@@ -23,7 +23,7 @@ function Reviews() {
             </section>
 
             <section className=" flex-col text-center items-center mt-10 font-poppins text-[1rem]">
-              <p className="text-white break-words px-10 ">
+              <p className="text-white break-words ">
                 “Sabor divino” en l´Estarit es un lugar que no debes perderte si
                 eres amante de la buena pizza. Con su ambiente acogedor y
                 servicio impecable. Sin duda repetiremos.
@@ -46,7 +46,7 @@ function Reviews() {
               />
             </section>
             <section className=" flex-col text-center items-center mt-10 font-poppins text-[1rem]">
-              <p className="text-white px-10 break-words ">
+              <p className="text-white px-10 ">
                 La pizza más deliciosa de todo el Bajo Empordá. 🤤 elaborada
                 fresca y por su propio dueño. Negocio familiar y excelente
                 servicio.
@@ -69,9 +69,10 @@ function Reviews() {
               />
             </section>
             <section className=" flex-col text-center items-center mt-10 font-poppins text-[1rem]">
-              <p className="text-white break-words  px-10">
-                Una de las mejores pizzas que he probado, el servicio de 10 y
-                muy buen ambiente🥳
+              <p className="text-white px-10">
+                “Sabor divino” en l´Estarit es un lugar que no debes perderte si
+                eres amante de la buena pizza. Con su ambiente acogedor y
+                servicio impecable. Sin duda repetiremos.
               </p>
             </section>
             <section className="flex text-center items-center justify-center text-white mt-2">
