@@ -7,10 +7,10 @@ function Reviews() {
   return (
     <motion.div
       initial={{ x: "-100vw, ", y: "-29.1vw" }}
-      animate={{ x: 933 }}
+      animate={{ x: 390 }}
       transition={{ type: "spring", stiffness: 40 }}
     >
-      <div className="z-50 flex absolute justify-center bg-black top-[0] left-[] right-[0] w-[91.4dvh] h-[62.1dvh]">
+      <div className="z-50 flex absolute justify-center bg-[#f9432e] top-[0] left-[0] right-[0] w-[94.4dvh] h-[62.1dvh]">
         {/*Start Carrousel boots */}
         <Carousel indicators={false} className="relative">
           <Carousel.Item>

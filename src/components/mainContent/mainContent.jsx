@@ -17,6 +17,7 @@ function MainContent() {
           <ButtonUi />
         </section>
 
+        {/* Seção de Imagem */}
         <section className="w-full lg:w-[50%] flex items-center justify-center bg-[#f9432e] mt-6 lg:mt-0">
           <img
             src={bgMain2}
