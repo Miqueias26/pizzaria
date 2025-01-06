@@ -11,7 +11,7 @@ function Reviews() {
       // Mobile (sm)
       return {
         initial: { x: "-100vw", y: "-37vh" },
-        animate: { x: -147, y: -315 },
+        animate: { x: -128, y: -280 },
         transition: { type: "spring", stiffness: 50 },
       };
     } else if (width <= 768) {
