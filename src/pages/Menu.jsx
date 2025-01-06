@@ -10,7 +10,7 @@ const items = [
   {
     id: 1,
     category: "Pizza",
-    image: "/public/card10.png",
+    image: "/pizzaria/card10.png",
     price: 8.0,
     text: "Marguerita",
     text2: "Salsa de tomate, Mozzarella, Albahaca, Aceite de oliva.",
@@ -19,7 +19,7 @@ const items = [
   {
     id: 2,
     category: "Pizza",
-    image: "/public/card2.png",
+    image: "/pizzaria/card2.png",
     price: 8.0,
     text: "Marguerita",
     text2: "Salsa de tomate, Mozzarella, Albahaca, Aceite de oliva.",
@@ -28,7 +28,7 @@ const items = [
   {
     id: 3,
     category: "Pizza",
-    image: "/public/card3.png",
+    image: "/pizzaria/card3.png",
     price: 8.0,
     text: "Marguerita",
     text2: "Salsa de tomate, Mozzarella, Albahaca, Aceite de oliva.",
@@ -37,7 +37,7 @@ const items = [
   {
     id: 4,
     category: "Pizza",
-    image: "/public/card11.png",
+    image: "/pizzaria/card11.png",
     price: 8.0,
     text: "Marguerita",
     text2: "Salsa de tomate, Mozzarella, Albahaca, Aceite de oliva.",
@@ -46,7 +46,7 @@ const items = [
   {
     id: 5,
     category: "Pizza",
-    image: "/public/card5.png",
+    image: "/pizzaria/card5.png",
     price: 8.0,
     text: "Marguerita",
     text2: "Salsa de tomate, Mozzarella, Albahaca, Aceite de oliva.",
@@ -55,7 +55,7 @@ const items = [
   {
     id: 6,
     category: "Pizza",
-    image: "/public/card6.png",
+    image: "/pizzaria/card6.png",
     price: 8.0,
     text: "Beef Pizza",
     text2: "Salsa de tomate, Mozzarella, Albahaca, Aceite de oliva",
@@ -64,7 +64,7 @@ const items = [
   {
     id: 7,
     category: "Sobremesas",
-    image: "/public/postresmorango.png",
+    image: "/pizzaria/postresmorango.png",
     price: 8.0,
     text: "Pizza Morango",
     text2: "",
@@ -73,7 +73,7 @@ const items = [
   {
     id: 8,
     category: "Refrigerante",
-    image: "/public/cocacola.png",
+    image: "/pizzaria/cocacola.png",
     price: 8.0,
     text: "Coca Cola",
     text2: "",

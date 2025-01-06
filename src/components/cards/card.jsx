@@ -60,7 +60,7 @@ function Card() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 justify-items-center p-4">
           <CardContent
-            image="/public/card9.png"
+            image="/pizzaria/card9.png"
             text="Marguerita"
             text2="Salsa de tomate, Mozzarella, Albahaca, Aceite de oliva."
             title="Pizza Marguerita"
@@ -68,28 +68,28 @@ function Card() {
           />
 
           <CardContent
-            image="/public/card10.png"
+            image="/pizzaria/card10.png"
             text="Pepperoni"
             text2="Salsa de tomate, Mozzarella, Pepperoni."
             title="Pizza Pepperoni"
             price={8.2}
           />
           <CardContent
-            image="/public/card6.png"
+            image="/pizzaria/card6.png"
             text="Cuatro Quesos"
             text2="Mozzarella, Queso azul, Parmesano, Queso Emmental."
             title="Pizza Cuatro Quesos"
             price={8.2}
           />
           <CardContent
-            image="/public/card7.png"
+            image="/pizzaria/card7.png"
             text="Hawaiana"
             text2="Salsa de tomate, Mozzarella, Jamón, Piña."
             title="Pizza Hawaiana"
             price={8.2}
           />
           <CardContent
-            image="/public/card11.png"
+            image="/pizzaria/card11.png"
             text="Babacoa"
             text2="Salsa de tomate, Mozzarella, Bacon, Carne picada."
             title="Pizza Babacoa"
