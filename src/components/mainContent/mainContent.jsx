@@ -1,4 +1,4 @@
-import bgMain2 from "/public/bgMain2.png";
+import bgMain2 from "/bgMain2.png";
 import ButtonUi from "../../components/ultilities/button";
 import ScrollEffect from "../ultilities/scrolleffect";
 
