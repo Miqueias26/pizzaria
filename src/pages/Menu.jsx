@@ -125,9 +125,9 @@ const Menu = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="flex items-center p-2 bg-[#D2210D] justify-center gap-9 mb-4">
+      <div className="flex flex-wrap items-center p-2 bg-[#D2210D] justify-center gap-4 mb-4">
         <button
-          className={`flex items-center border-none text-lg font-bold bg-none  py-2 px-3 rounded-full ${
+          className={`flex items-center border-none text-lg font-bold bg-none py-2 px-3 rounded-full ${
             selectedCategory === "Promociones"
               ? "text-white border-2 border-white"
               : "text-white"

@@ -48,7 +48,7 @@ function Footer() {
           {/* Coluna 2 - Atendimento ao Cliente */}
           <div className="mt-8 md:mt-0 md:w-1/2">
             <h1 className="font-poppins font-bold text-lg md:text-2xl mb-4">
-              Servicio al Cliente Telepizza
+              Servicio al Cliente
             </h1>
             <div className="mb-6">
               <h3 className="font-bold text-sm md:text-base">
