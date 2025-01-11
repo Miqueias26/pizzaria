@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
-import { IoIosStarOutline } from "react-icons/io";
 import { CiPizza } from "react-icons/ci";
-
 import { LuCupSoda, LuIceCreamBowl } from "react-icons/lu";
 import { BiSolidOffer } from "react-icons/bi";
 
@@ -21,7 +19,7 @@ const items = [
     category: "Pizza",
     image: "/pizzaria/card2.png",
     price: 8.0,
-    text: "Marguerita",
+    text: "Pepperoni",
     text2: "Salsa de tomate, Mozzarella, Albahaca, Aceite de oliva.",
     onPromotion: false,
   },
@@ -39,8 +37,8 @@ const items = [
     category: "Pizza",
     image: "/pizzaria/card11.png",
     price: 8.0,
-    text: "Marguerita",
-    text2: "Salsa de tomate, Mozzarella, Albahaca, Aceite de oliva.",
+    text: "Pepperoni",
+    text2: "Pepperoni",
     onPromotion: true,
   },
   {
