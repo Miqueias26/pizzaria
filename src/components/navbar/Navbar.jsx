@@ -5,6 +5,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { FaHome, FaPhoneAlt, FaUserFriends } from "react-icons/fa";
 import { MdRestaurantMenu } from "react-icons/md";
+import Orders from "../ultilities/Orders";
 
 const Navbar = () => {
   const [ShowModel, setShowModel] = useState(false);
@@ -99,9 +100,9 @@ const Navbar = () => {
       </nav>
 
       <div className="flex items-center gap-2">
-        <button className="hidden md:flex justify-center items-center px-4 py-2 bg-[#25bb3b] text-white font-bold rounded-full transform transition-transform duration-200 hover:scale-105">
-          Hacer Pedido
-        </button>
+        <Orders />
+        {/*  <button className="hidden md:flex justify-center items-center px-4 py-2 bg-[#25bb3b] text-white font-bold rounded-full transform transition-transform duration-200 hover:scale-105">
+        </button> */}
 
         {!ShowModel && (
           <HiOutlineMenuAlt3

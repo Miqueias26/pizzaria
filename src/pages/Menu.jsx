@@ -64,7 +64,7 @@ const items = [
     category: "Sobremesas",
     image: "/pizzaria/postresmorango.png",
     price: 8.0,
-    text: "Pizza Morango",
+    text: "Pizza Fresa",
     text2: "",
     onPromotion: false,
   },
@@ -92,7 +92,7 @@ const CardContent = ({ image, price, text, text2 }) => {
         <p className="font-poppins text-sm text-[#AEB2BB] mb-1 max-w-64">
           {text2}
         </p>
-        <p className="text-[#D2210D] text-lg font-poppins font-extrabold">
+        <p className="text-[#25b73b] text-lg font-poppins font-extrabold">
           {formattedPrice}
         </p>
       </div>
@@ -123,7 +123,7 @@ const Menu = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="flex items-center p-2 bg-[#D2210D] justify-center gap-9 mb-4">
+      <div className="flex items-center p-2 bg-[#25b73b] justify-center gap-9 mb-4">
         <button
           className={`flex items-center border-none text-lg font-bold bg-none  py-2 px-3 rounded-full ${
             selectedCategory === "Promociones"
