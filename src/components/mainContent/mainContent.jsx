@@ -10,7 +10,7 @@ function MainContent() {
           <p className="text-[1.2rem] lg:text-[1.7rem] font-jost text-black leading-relaxed text-wrap">
             Imagina morder una rebanada de pizza tan deliciosa que haga que tu
             paladar dance de placer. En
-            <strong className="text-[#D2210D]"> Sabor Divino</strong>, cada
+            <strong className="text-[#2bd845]"> Sabor Divino</strong>, cada
             ingrediente se elige con cariño, cada masa se prepara con perfección
             y cada horno es una promesa de un sabor inigualable.
           </p>
@@ -18,7 +18,7 @@ function MainContent() {
         </section>
 
         {/* Seção de Imagem */}
-        <section className="w-full lg:w-[50%] flex items-center justify-center bg-[#f9432e] mt-6 lg:mt-0">
+        <section className="w-full lg:w-[50%] flex items-center justify-center bg-[#2bd845] mt-6 lg:mt-0">
           <img
             src={bgMain2}
             alt=""

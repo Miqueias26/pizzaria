@@ -32,7 +32,7 @@ const StyledWrapper = styled.div`
     position: relative;
     overflow: hidden;
     z-index: 1;
-    color: #d2210d;
+    color: #2bd845;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   }
 
@@ -44,7 +44,7 @@ const StyledWrapper = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to right, #d2210d 0%, #d2210d 100%);
+    background-image: linear-gradient(to right, #2bd845 0%, #2bd845 100%);
     transition: 0.5s ease;
     display: block;
     z-index: -1;

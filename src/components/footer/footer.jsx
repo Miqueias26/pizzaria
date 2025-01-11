@@ -76,7 +76,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex justify-between items-center py-1 px-8 bg-[#D2210D]">
+        <div className="flex justify-between items-center py-1 px-8 bg-[#2bd845]">
           <h2 className="text-white  font-poppins font-bold text-xs md:text-md lg:text-lg cursor-pointer m-0">
             &copy; 2024 Pizzaria Inc.
           </h2>
