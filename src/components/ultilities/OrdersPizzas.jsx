@@ -1,91 +1,157 @@
-import { div, p } from "framer-motion/client";
 import React, { useState } from "react";
 
-{
-  /*FUNCION GENERAL DEL CODIGO */
-}
 const OrdersSystem = () => {
-  {
-    /*ARRAY QUE HACE EL USO DEL USESTATE PARA PERCORRER LOS OBJETOS CON ID, TITLE, PRECIOS E LA CUANTIDAD QUE INICIALMENTE EMPEZA EN 0 */
-  }
+  // Definimos o estado inicial usando useState.
+  // Cada item possui: id (identificador único), title (nome do produto), price (preço para tamanho médio),
+  // priceLarge (preço para tamanho grande), quantity (quantidade inicial) e size (tamanho padrão inicial como "média").
   const [orders, setOrders] = useState([
-    { id: 1, title: "Marguerita", price: 10, quantity: 0 },
-    { id: 2, title: "Pepperoni", price: 10, quantity: 0 },
-    { id: 3, title: "Hawaiana", price: 10, quantity: 0 },
-    { id: 4, title: "Cuatro quesos", price: 10, quantity: 0 },
-    { id: 5, title: "Pepsi", price: 10, quantity: 0 },
+    {
+      id: 1,
+      title: "Marguerita",
+      price: 10,
+      priceLarge: 15,
+      quantity: 0,
+      size: "média",
+    },
+    {
+      id: 2,
+      title: "Pepperoni",
+      price: 10,
+      priceLarge: 15,
+      quantity: 0,
+      size: "média",
+    },
+    {
+      id: 3,
+      title: "Hawaiana",
+      price: 10,
+      priceLarge: 15,
+      quantity: 0,
+      size: "média",
+    },
+    {
+      id: 4,
+      title: "Cuatro quesos",
+      price: 10,
+      priceLarge: 15,
+      quantity: 0,
+      size: "média",
+    },
+    {
+      id: 5,
+      title: "Pepsi",
+      price: 10,
+      priceLarge: 15,
+      quantity: 0,
+      size: "média",
+    },
   ]);
 
-  {
-    /*1º FUNCCION QUE TIENE COMO ARGUMENTO EL ID DE LOS OBJETOS E EL VALOR "CHANGE" QUE ALMACENA LOS ESTADOS DE LAS CANTIDADES DE ADICION O DISMINUICION*/
-  }
-  {
-    /*2º DESPUES DE PASAR LOS ARGUMENTOS EN UNA ARROW FUCNTION SE HACE EL USO DEL SELECTOR DE ESTADO "SETORDERS" Y COMO ARGUMENTO EL ESTADO "ORDERS"
-      TENDRÁ UNA ARROW FUNCTION QUE RECIBIRA EL VALOR ORDER COMO ARGUMENTO/*
-      3º EL ORDER DEL ARGUMENTO SIRVE COMO OBJETO DESTRACTORIN DE CADA CONPONENTE DEL OBJETO EJ: ORDER.PRICE*/
-    /* 4º EL ORDER HACE UN TEST CONDICIONAL CON LAS CLAVES ID Y CON OPERADORES CONDICIONAIS  */
-  }
+  // Função responsável por alterar a quantidade de um item no pedido.
+  // Recebe como parâmetros o `id` do item a ser modificado e o `change`, que pode ser 1 (incrementar) ou -1 (decrementar).
   const basketOperator = (id, change) => {
     setOrders((orders) =>
-      orders.map((order) =>
-        order.id === id
-          ? {
-              ...order,
-              quantity:
-                Math.max(0, order.quantity + change) &&
-                Math.min(5, order.quantity + change),
-            }
-          : order
+      orders.map(
+        (order) =>
+          order.id === id // Verifica se o id do item corresponde ao id passado.
+            ? {
+                ...order, // Copia os dados do item.
+                quantity: Math.max(0, Math.min(5, order.quantity + change)), // Atualiza a quantidade, garantindo que esteja entre 0 e 5.
+              }
+            : order // Caso o id não corresponda, mantém o item inalterado.
       )
     );
   };
-  {
-    /*EL TOTAL ES RESPONSABLE POR LA SUMA GENERAL DE LOS PRODUCTOS, SE USA EL REDUCE PARA PERCORRER EL ARRAY E REDUCIR EN LA SUMA */
-  }
-  {
-    /*COMO ARGUMENTO SE PASA UN NUEVO ARGUMENTO CON VALOR INICAL EN 0 Y EL ORDER QUE ES ARGUMENTO DE ORDERS.MAP LA SUMA SE HACE ENTRE PARENTESIS Y MULTIPLICADA EN LA CANTIDAD*/
-  }
+
+  // Função responsável por alterar o tamanho (média ou grande) de um item.
+  // Recebe o `id` do item e o novo tamanho (`newSize`).
+  const changeSize = (id, newSize) => {
+    setOrders((orders) =>
+      orders.map(
+        (order) =>
+          order.id === id // Verifica se o id do item corresponde ao id passado.
+            ? { ...order, size: newSize } // Atualiza o tamanho do item.
+            : order // Mantém os outros itens inalterados.
+      )
+    );
+  };
+
+  // Calcula o total a pagar pelos pedidos.
+  // Usamos o método `reduce` para somar os valores. Ele percorre o array de pedidos (orders).
   const total = orders.reduce(
-    (initialValue, order) => initialValue + order.price * order.quantity,
-    0
+    (initialValue, order) =>
+      // Verifica o tamanho do item e usa o preço correspondente (média ou grande), multiplicando pela quantidade.
+      initialValue +
+      (order.size === "média" ? order.price : order.priceLarge) *
+        order.quantity,
+    0 // O valor inicial da soma é 0.
   );
+
   return (
     <div className="flex flex-col">
-      {/*COMO RETORNO DE LA LOGICA EL ORDERNS.MAP ES ACCIONADO EN CHAVES {} Y EL ORDER PASADO COMO UN ARGUMENTO SUSEQUENTE UNA ARROW FUNCTION ES ANADIDA Y ENTRE ASPAS UNA DIV CON LA KEY DEL MAP Y EL ID*/}
+      {/* Mapeamos o array `orders` para exibir cada item na interface. */}
       {orders.map((order) => (
         <div key={order.id}>
           <div className="flex justify-between">
-            <div className="flex items-center text-center relative ">
-              {/*DESTRACTORIN DE LOS TITULOS DEL OBJETO */}
-              <p className="">{order.title}</p>
-              {/*DESTRACTORIN DE PRICE DEL OBJETO */}
-              <p className="absolute left-40">{order.price}€</p>
-            </div>
+            {/* Exibimos o título do item e seu preço correspondente ao tamanho selecionado. */}
             <div className="flex items-center text-center relative">
-              {/*BUTTON INCREMENTAR QUE ACIONA LA FUNCTION BASKETOPERADOR Y QUE TINE COMO ARGUMENTO EL DESTRACTORIN DEL ID, 1*/}
+              <p>{order.title}</p>
+              <p className="absolute left-40">
+                {order.size === "média" ? order.price : order.priceLarge}€
+              </p>
+            </div>
+            {/* Controles para adicionar ou remover itens do pedido. */}
+            <div className="flex items-center text-center relative">
+              {/* Botão para incrementar a quantidade. */}
               <button
-                onClick={() => basketOperator(order.id, 1)}
+                onClick={() => basketOperator(order.id, 1)} // Chama `basketOperator` com +1.
                 className="absolute right-8"
               >
                 +
               </button>
-              {/*DESTRACTORIN DE LA CUANTIDADE DE LOS PRODUCTOS*/}
+              {/* Exibe a quantidade atual do item. */}
               <span className="absolute right-3">{order.quantity}</span>
-              {/*BUTTON DECREMENTAR QUE ACIONA LA FUNCTION BASKETOPERADOR Y QUE TINE COMO ARGUMENTO EL DESTRACTORIN DEL ID, PERO CON -1*/}
+              {/* Botão para decrementar a quantidade. */}
               <button
-                onClick={() => basketOperator(order.id, -1)}
+                onClick={() => basketOperator(order.id, -1)} // Chama `basketOperator` com -1.
                 className="absolute"
               >
                 -
               </button>
             </div>
           </div>
+          {/* Botões para selecionar o tamanho do item (média ou grande). */}
+          <div className="flex space-x-2 mt-2">
+            {/* Botão para selecionar o tamanho "média". */}
+            <button
+              onClick={() => changeSize(order.id, "média")} // Altera o tamanho para "média".
+              className={`px-4 py-2 border rounded ${
+                order.size === "média"
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-200"
+              }`}
+            >
+              Média
+            </button>
+            {/* Botão para selecionar o tamanho "grande". */}
+            <button
+              onClick={() => changeSize(order.id, "grande")} // Altera o tamanho para "grande".
+              className={`px-4 py-2 border rounded ${
+                order.size === "grande"
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-200"
+              }`}
+            >
+              Grande
+            </button>
+          </div>
         </div>
       ))}
       <hr />
+      {/* Exibe o valor total a pagar. */}
       <div>
         <p>
-          o total a pagar é: <strong>{total}€</strong>
+          O total a pagar é: <strong>{total}€</strong>
         </p>
       </div>
     </div>
