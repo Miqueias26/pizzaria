@@ -127,7 +127,7 @@ const OrdersSystem = () => {
               onClick={() => changeSize(order.id, "média")} // Altera o tamanho para "média".
               className={`px-4 py-2 border rounded ${
                 order.size === "média"
-                  ? "bg-blue-500 text-white"
+                  ? "bg-green-600 text-white"
                   : "bg-gray-200"
               }`}
             >
@@ -138,7 +138,7 @@ const OrdersSystem = () => {
               onClick={() => changeSize(order.id, "grande")} // Altera o tamanho para "grande".
               className={`px-4 py-2 border rounded ${
                 order.size === "grande"
-                  ? "bg-blue-500 text-white"
+                  ? "bg-green-600 text-white"
                   : "bg-gray-200"
               }`}
             >
