@@ -59,7 +59,7 @@ function Reviews() {
   flex 
   absolute 
   justify-center 
-  bg-[#2bd845]
+  bg-[#d21f1f]
   top-[40vh]  /* Ajuste para mobile */
   sm:top-[77px] /* Top específico para sm */
   md:top-[14Vh]  /* Retorno ao padrão em tablets ou maiores */
